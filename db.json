@@ -1,14 +1,47 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "id": 1,
+  "externalId": 0,
+  "invoiceNumber": "FAC00000008",
+  "status": "VALIDATED",
+  "issueDate": "2021-01-26",
+  "dueDateType": null,
+  "dueDate": "2021-02-28",
+  "optionalFieldName1": "option 1",
+  "optionalFieldValue1": "value 1",
+  "optionalFieldName2": "option 2",
+  "optionalFieldValue2": "value 2",
+  "shippingCost": "3.25",
+  "clientId": 1,
+  "senderId": 1,
+  "invoiceEntries": [
+    {
+      "id": 1,
+      "invoiceId": 1,
+      "description": "some description",
+      "comment": "some comment",
+      "unitPrice": "450.00",
+      "quantity": "5",
+      "amountExclTax": "5000.00",
+      "vatRate": "20%",
+      "discount": "0"
+    },
+    {
+      "id": 2,
+      "invoiceId": 1,
+      "description": "some other description",
+      "comment": "some other comment",
+      "unitPrice": "650.00",
+      "quantity": "20",
+      "amountExclTax": "1000.00",
+      "vatRate": "10%",
+      "discount": "0"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "amountExclTax": "5555.55",
+  "amountInclTax": "666.55",
+  "vatAmount": 
+    {
+      "10": "3.67",
+      "20": "45.56"
+    }
 }

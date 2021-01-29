@@ -1,11 +1,11 @@
 {
-
     "invoices": [{
         "id": 1,
         "externalId": 0,
         "invoiceNumber": "FAC00000008",
-        "status": "VALIDATED",
-        "issueDate": "2021-01-26",
+        "status": "not paid",
+        "type": "invoice",
+        "issueDate": "2021-01-27",
         "dueDateType": null,
         "dueDate": "2021-02-28",
         "optionalFieldName1": "",
@@ -15,7 +15,6 @@
         "shippingCost": "3.25",
         "clientId": 1,
         "senderId": 1,
-        "draft": true,
         "invoiceEntries": [{
                 "id": 1,
                 "invoiceId": 1,
@@ -25,7 +24,7 @@
                 "quantity": "5",
                 "amountExclTax": "5000.00",
                 "vatRate": "20%",
-                "discount": "0"
+                "discount": "10"
             },
             {
                 "id": 2,
@@ -50,5 +49,22 @@
                 "amount": "95.00"
             }
         ]
+    }],
+    "invoiceLights": [{
+        "id": 1,
+        "invoiceNumber": "FAC00000075",
+        "status": "draft",
+        "type": "invoice",
+        "issueDate": "2021-01-27",
+        "dueDate": "2021-02-28",
+        "client": "April"
+    }, {
+        "id": 2,
+        "invoiceNumber": "FAC00000008",
+        "status": "not paid",
+        "type": "invoice",
+        "issueDate": "2021-01-26",
+        "dueDate": "2021-02-28",
+        "client": "Enedis"
     }]
 }
